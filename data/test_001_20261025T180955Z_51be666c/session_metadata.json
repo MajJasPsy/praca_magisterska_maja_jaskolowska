@@ -1,0 +1,10 @@
+{
+  "participant_id": "test_001",
+  "session_id": "20261025T180955Z_51be666c",
+  "created_utc": "2026-10-25T18:09:55.032300+00:00",
+  "plan_seed": 12345,
+  "environment_seed": 12346,
+  "config_version": "0.1.0",
+  "n_planned_trials": 16,
+  "note": "PROTOTYP TESTOWY; brak treningu i pomiaru pewnosci."
+}

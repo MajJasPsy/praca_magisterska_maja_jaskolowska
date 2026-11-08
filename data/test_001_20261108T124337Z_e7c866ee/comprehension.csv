@@ -1,0 +1,7 @@
+﻿attempt,question_id,question_text,left_text,right_text,correct_side,chosen_side,is_correct,rt_seconds
+1,safe_constant,Co daje lewa ścieżka?,Zawsze 6 zł,Zawsze 7 zł,left,left,1,4.110070199999427
+1,risky_context,Od czego zależą znaleziska na prawej ścieżce?,Od koloru strzałki,Od lasu,right,right,1,3.952160000000731
+1,forester_truth,Czy leśniczy może wskazać niewłaściwy las?,Tak,Nie,right,right,1,4.25213260000055
+1,forester_fee,Kiedy płacisz za wskazówkę w części głównej?,Zawsze,Gdy zapytasz,right,left,0,3.1571720000001733
+1,skip_signal,"Co widzisz, gdy nie zapytasz?",Brak nazwy lasu,Nazwę lasu,left,left,1,3.7995473000000857
+1,path_keys,Jak wybierasz ścieżkę ryzykowną?,Strzałką w lewo,Strzałką w prawo,right,right,1,2.5883387000003495

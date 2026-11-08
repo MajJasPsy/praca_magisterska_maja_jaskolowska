@@ -1,0 +1,7 @@
+﻿attempt,question_id,question_text,left_text,right_text,correct_side,chosen_side,is_correct,rt_seconds
+1,safe_constant,Ile punktów zapewnia opcja bezpieczna?,Zawsze 6 punktów,Zawsze 7 punktów,left,left,1,7.612699400051497
+1,risky_context,Od czego zależy rozkład nagród opcji ryzykownej?,Tylko od kosztu wskazówki,Od ukrytego kontekstu,right,right,1,7.268092799931765
+1,cue_can_err,Czy wskazówka może błędnie wskazać kontekst?,Tak,Nie,left,left,1,5.049908599932678
+1,cue_fee,Kiedy jest odejmowany koszt wskazówki?,W każdej próbie,Tylko gdy ją kupię,right,right,1,5.407122400007211
+1,skip_signal,"Co się dzieje, gdy rezygnujesz z zakupu wskazówki?",Nie widzę sygnału,Widzę sygnał za darmo,left,left,1,6.3304959000088274
+1,accuracy_meaning,Co oznacza wiarygodność wskazówki 60%?,60% szans na nagrodę,60% szans na poprawny sygnał,right,right,1,9.614751199958846

@@ -1,0 +1,13 @@
+﻿attempt,question_id,question_text,left_text,right_text,correct_side,chosen_side,is_correct,rt_seconds
+1,safe_constant,Ile punktów zapewnia opcja bezpieczna?,Zawsze 6 punktów,Zawsze 7 punktów,left,left,1,3.8315267000580207
+1,risky_context,Od czego zależy rozkład nagród opcji ryzykownej?,Tylko od kosztu wskazówki,Od ukrytego kontekstu,right,left,0,12.40699039993342
+1,cue_can_err,Czy wskazówka może błędnie wskazać kontekst?,Tak,Nie,left,right,0,3.5589337999699637
+1,cue_fee,Kiedy jest odejmowany koszt wskazówki?,W każdej próbie,Tylko gdy ją kupię,right,right,1,3.7237031999975443
+1,skip_signal,"Co się dzieje, gdy rezygnujesz z zakupu wskazówki?",Nie widzę sygnału,Widzę sygnał za darmo,left,left,1,3.2396502000046894
+1,accuracy_meaning,Co oznacza wiarygodność wskazówki 60%?,60% szans na nagrodę,60% szans na poprawny sygnał,right,left,0,4.138330699992366
+2,safe_constant,Ile punktów zapewnia opcja bezpieczna?,Zawsze 6 punktów,Zawsze 7 punktów,left,left,1,1.1824060999788344
+2,risky_context,Od czego zależy rozkład nagród opcji ryzykownej?,Tylko od kosztu wskazówki,Od ukrytego kontekstu,right,right,1,1.498009099974297
+2,cue_can_err,Czy wskazówka może błędnie wskazać kontekst?,Tak,Nie,left,left,1,1.8469505000393838
+2,cue_fee,Kiedy jest odejmowany koszt wskazówki?,W każdej próbie,Tylko gdy ją kupię,right,left,0,4.6279437999473885
+2,skip_signal,"Co się dzieje, gdy rezygnujesz z zakupu wskazówki?",Nie widzę sygnału,Widzę sygnał za darmo,left,left,1,4.035079199937172
+2,accuracy_meaning,Co oznacza wiarygodność wskazówki 60%?,60% szans na nagrodę,60% szans na poprawny sygnał,right,right,1,2.361876599956304

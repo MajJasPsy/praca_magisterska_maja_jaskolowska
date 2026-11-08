@@ -1,0 +1,165 @@
+{
+  "experiment": {
+    "name": "cue_bandit",
+    "version": "0.3.0-forest-balanced-training",
+    "mode": "test",
+    "n_trials": 90,
+    "n_blocks": 4,
+    "random_seed": 12345
+  },
+  "contexts": {
+    "sampling": "independent",
+    "states": {
+      "high": {
+        "weight": 1,
+        "risky_probabilities": [
+          0.05,
+          0.05,
+          0.1,
+          0.25,
+          0.55
+        ]
+      },
+      "neutral": {
+        "weight": 1,
+        "risky_probabilities": [
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2
+        ]
+      },
+      "low": {
+        "weight": 1,
+        "risky_probabilities": [
+          0.55,
+          0.25,
+          0.1,
+          0.05,
+          0.05
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "safe_points": 6,
+    "risky_outcomes": [
+      0,
+      3,
+      6,
+      9,
+      12
+    ]
+  },
+  "cue": {
+    "error_model": "symmetric_other",
+    "show_cost_and_accuracy": false
+  },
+  "design": {
+    "assignment": "balanced",
+    "randomize_order": true,
+    "max_identical_in_row": 3,
+    "conditions": [
+      {
+        "id": "c050",
+        "cue_accuracy": 1.0,
+        "cue_cost": 0.5,
+        "weight": 1
+      },
+      {
+        "id": "c150",
+        "cue_accuracy": 1.0,
+        "cue_cost": 1.5,
+        "weight": 1
+      }
+    ]
+  },
+  "training": {
+    "enabled": true,
+    "n_trials": 30,
+    "trials_per_context": 10,
+    "use_main_conditions": true,
+    "feedback": {
+      "show_reward": true,
+      "show_true_context": false,
+      "show_total_points": false
+    },
+    "comprehension_check": {
+      "enabled": true,
+      "min_correct_fraction": 0.8,
+      "max_attempts": 2
+    }
+  },
+  "main_task": {
+    "feedback": {
+      "show_reward": true,
+      "show_true_context": false,
+      "show_total_points": false
+    }
+  },
+  "confidence": {
+    "enabled": false,
+    "stage": "after_cue_before_reward_choice",
+    "min_value": 0,
+    "max_value": 100,
+    "step": 1,
+    "every_nth_trial": 1
+  },
+  "timing": {
+    "fixation_seconds": 0.5,
+    "cue_result_seconds": 1.5,
+    "reward_feedback_seconds": 1.5,
+    "intertrial_seconds": 0.5,
+    "cue_decision_timeout_seconds": 10,
+    "reward_decision_timeout_seconds": 10
+  },
+  "controls": {
+    "left_key": "left",
+    "right_key": "right",
+    "continue_key": "space",
+    "quit_key": "escape",
+    "randomize_cue_option_positions": true,
+    "randomize_reward_option_positions": false,
+    "timeout_policy": "mark_missing"
+  },
+  "display": {
+    "fullscreen": true,
+    "window_size_pixels": [
+      1100,
+      700
+    ],
+    "units": "height",
+    "background_color": "black",
+    "text_color": "white",
+    "language": "pl",
+    "font": "Segoe UI",
+    "forest_gray": "#898989"
+  },
+  "images": {
+    "directory": "images",
+    "forest_files": {
+      "A": "context_1.png",
+      "B": "context_2.png",
+      "C": "context_3.png",
+      "unknown": "context_null.png"
+    }
+  },
+  "scoring": {
+    "starting_points": 0,
+    "allow_negative_total": true,
+    "bonus": {
+      "enabled": false,
+      "points_to_pln": null,
+      "min_pln": null,
+      "max_pln": null
+    }
+  },
+  "data": {
+    "output_directory": "data",
+    "save_each_trial": true,
+    "save_config_snapshot": true,
+    "save_generated_trial_schedule": true,
+    "participant_id_from_dialog": true
+  }
+}

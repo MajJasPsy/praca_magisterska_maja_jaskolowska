@@ -1,0 +1,67 @@
+AKTUALIZACJA PSYCHOPY — PORTFEL, DARMOWY TRENING, 30 CEN x 3
+
+ZMIANY
+1. TRENING: 30 prób (10 na każdy las), wszystkie wskazówki ZA DARMO.
+   Na ekranie pierwszej decyzji brak białego pola z kosztem; brak portfela.
+   Na ekranach ścieżek pozostają gotowe grafiki context_1/2/3/null.
+   Pieniądze z treningu nie wchodzą do salda głównego.
+2. CZĘŚĆ GŁÓWNA: 90 prób. Portfel w lewym górnym rogu:
+   „Stan konta:” i aktualna kwota w zł, wpisywane na bieżąco przez PsychoPy.
+   Lewy górny róg wybrano po to, żeby nie zasłaniać dymku „Las A/B/C”.
+   Portfel występuje przy pytaniu o wskazówkę, wyborze ścieżki,
+   informacji „Znaleziono: ...” oraz ekranach między próbami.
+3. SALDO: na początku części głównej = scoring.starting_points (obecnie 0 zł).
+   Przy zakupie wskazówki na planszy ścieżek saldo od razu maleje o cenę.
+   Po wyborze ścieżki wzrasta o rzeczywiście znalezioną kwotę.
+   Feedback centralny nadal mówi tylko „Znaleziono: [kwota]”.
+   Zapis CSV ma oddzielne pola reward_points, cue_cost_paid, net_points, running_total.
+4. PRZED CZĘŚCIĄ GŁÓWNĄ: komunikat o płatnych wskazówkach i celu
+   zebrania jak największej sumy pieniędzy.
+5. SIATKA CEN: import z przesłanego CSV; 30 poziomów 0,55–2,00 zł
+   co 0,05 zł. Wszystkie wpisane do design.conditions w config.yaml.
+   Każdy ma wagę 1 i jest dokładnie 3 razy w 90 próbach części głównej.
+   Kopia pliku CSV w paczce służy porównaniu w teście automatycznym.
+6. Zachowano: 100% trafność leśniczego, zmienne położenie TAK/NIE,
+   lewa droga zawsze bezpieczna, prawa droga ryzykowna, brak pomiaru pewności.
+
+INSTALACJA
+1. Zamknij uruchomiony eksperyment. Zrób kopię całego folderu projektu.
+2. W folderze „eksperyment” PODMIEŃ TYLKO:
+   - config.yaml
+   - demo_one_trial.py
+   - session_runner.py
+   - participant_guidance.py
+3. W tym samym folderze DODAJ/ZASTĄP:
+   - check_forest_120.py
+   - siatka_cen_skanera_czesc_eksperymentalna.csv
+4. Przygotowany przez Ciebie obraz umieść pod ścieżką:
+       eksperyment/images/wallet.png
+   Cztery gotowe grafiki pozostają tam, gdzie są:
+       images/context_1.png
+       images/context_2.png
+       images/context_3.png
+       images/context_null.png
+5. Nie zmieniaj environment.py, trial_generator.py, demo_session.py,
+   data_manager.py, text_labels.py, folderu data ani .venv.
+6. Uruchom w PyCharm check_forest_120.py.
+   Oczekiwane: 5 komunikatów OK i exit code 0.
+7. Uruchom demo_one_trial.py, żeby zobaczyć portfel na ekranach jednej próby.
+8. Uruchom demo_session.py, aby przetestować:
+   - darmowe wskazówki i brak portfela w 30 próbach treningowych,
+   - komunikat między fazami,
+   - portfel, płatne wskazówki i saldo w 90 próbach głównych.
+
+UWAGI
+- Obecne scoring.starting_points = 0 i allow_negative_total = true
+  pozostawiono BEZ ZMIANY (nie ustaliłyśmy jeszcze stanu początkowego).
+- Obecne prawdopodobieństwa nagród i czasy ekranów również bez zmian.
+- Siatka cen jest skopiowana do config.yaml, więc eksperyment nie wymaga
+  odczytywania CSV przy każdej sesji. CSV należy trzymać przy teście, żeby
+  wykrywał ewentualne różnice między siatką a konfiguracją.
+- Reguła timeout_policy: mark_missing: jeśli uczestnik nie ukończy próby,
+  nie nalicza się ani ceny wskazówki, ani nagrody; widoczne saldo zostaje
+  przywrócone. Ta reguła jest nadal robocza.
+- W folderze tests/ mogą pozostać starsze testy z dawnej wersji F/J;
+  do tej aktualizacji używaj nowego check_forest_120.py.
+- Logika i układ zostały sprawdzone automatycznie oraz na atrapach ekranów.
+  Wygląd na rzeczywistym monitorze i działanie okna PsychoPy zweryfikuj lokalnie.

@@ -1,0 +1,13 @@
+{
+  "participant_id": "test_002",
+  "session_id": "20261025T182202Z_b0a0f71c",
+  "created_utc": "2026-10-25T18:22:02.053205+00:00",
+  "plan_seed": 12345,
+  "environment_seed": 12346,
+  "config_version": "0.1.0",
+  "n_planned_trials": 16,
+  "n_planned_training_trials": 6,
+  "training_plan_seed": 12347,
+  "training_environment_seed": 12348,
+  "note": "PROTOTYP TESTOWY; trening jest techniczny, bez testu rozumienia i pomiaru pewnosci."
+}

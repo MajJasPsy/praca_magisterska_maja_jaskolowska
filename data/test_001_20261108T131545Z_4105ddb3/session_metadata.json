@@ -1,0 +1,15 @@
+{
+  "participant_id": "test_001",
+  "session_id": "20261108T131545Z_4105ddb3",
+  "created_utc": "2026-11-08T13:15:45.483718+00:00",
+  "plan_seed": 12345,
+  "environment_seed": 12346,
+  "config_version": "0.4.0-wallet-free-training-30-costs",
+  "n_planned_trials": 90,
+  "n_planned_training_trials": 30,
+  "training_trials_per_context": 10,
+  "training_plan_seed": 12347,
+  "training_environment_seed": 12348,
+  "comprehension_check_enabled": true,
+  "note": "PROTOTYP TESTOWY; instrukcje i quiz sa robocze, brak pomiaru pewnosci."
+}

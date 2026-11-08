@@ -1,0 +1,34 @@
+AKTUALIZACJA — 120 PRÓB, 10 NA KAŻDY LAS W TRENINGU, ZMIENNE STRONY TAK/NIE
+
+ZMIANY:
+• Łącznie 120 prób: training.n_trials=30 + experiment.n_trials=90.
+• W treningu dokładnie po 10 RZECZYWISTYCH prób każdego z trzech lasów.
+  To równoważenie planu, nie dodatkowe ujawnianie kontekstu uczestnikowi.
+• W pierwszej decyzji TAK i NIE zamieniają się pozycjami, niemal po równo w każdym warunku.
+• W drugiej decyzji LEWO=BEZPIECZNA, PRAWO=RYZYKOWNA bez losowania stron.
+• Leśniczy mówi prawdę (q=1); koszty 0,50/1,50 zł są TYLKO TESTOWE do zastąpienia nową listą.
+• Ekran po próbie nadal: wyłącznie «Znaleziono: [aktualna kwota]».
+• Gotowe cztery ilustracje w images/ BEZ ZMIAN.
+• Brak pomiaru pewności.
+
+WDROŻENIE:
+1. Skopiuj cały folder «eksperyment» jako kopię zapasową.
+2. Rozpakuj tę paczkę i ZASTĄP w folderze «eksperyment»:
+   config.yaml, environment.py, trial_generator.py, session_runner.py,
+   demo_one_trial.py, participant_guidance.py, data_manager.py.
+3. DODAJ nowy test check_forest_120.py obok config.yaml.
+4. NIE NADPISUJ demo_session.py, text_labels.py, folderu images, data ani .venv.
+5. Uruchom check_forest_120.py (jego test celowo wyłącza quiz tylko w swojej kopii config).
+6. Uruchom demo_one_trial.py (sprawdź czy TAK raz bywa po lewej, raz po prawej
+   przy powtórnym uruchomieniu/zmianie ziarna — przy stałym seed pierwsza próba jest identyczna).
+7. Uruchom demo_session.py, jeśli chcesz zobaczyć 30 prób treningowych + quiz + 90 głównych.
+
+WAŻNE METODOLOGICZNIE:
+• 30 prób po 10 na las zapewnia dokładną LICZBĘ prawdziwych kontekstów w treningu.
+  Uczestnik nadal widzi nazwę lasu tylko po zakupie wskazówki. Ten trening
+  nie jest jeszcze odrębnym etapem wymuszonego uczenia rozkładów nagród.
+• Dwa koszty testowe zostaną zastąpione dostarczoną listą; NIE wybieraj ich jako docelowe.
+• Do właściwego badania trzeba jeszcze zatwierdzić reguły timeout, pilotaż
+  i metodologiczny schemat fazy uczenia.
+• Pliki check_guidance.py, check_training.py z dawnego interfejsu nie są
+  testami tej nowej wersji; na razie używaj check_forest_120.py.

@@ -1,0 +1,15 @@
+{
+  "participant_id": "test_011",
+  "session_id": "20261107T190650Z_4ce9447e",
+  "created_utc": "2026-11-07T19:06:50.481021+00:00",
+  "plan_seed": 12345,
+  "environment_seed": 12346,
+  "config_version": "0.3.0-forest-balanced-training",
+  "n_planned_trials": 90,
+  "n_planned_training_trials": 30,
+  "training_trials_per_context": 10,
+  "training_plan_seed": 12347,
+  "training_environment_seed": 12348,
+  "comprehension_check_enabled": true,
+  "note": "PROTOTYP TESTOWY; instrukcje i quiz sa robocze, brak pomiaru pewnosci."
+}

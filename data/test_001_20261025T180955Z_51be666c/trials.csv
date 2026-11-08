@@ -1,0 +1,17 @@
+﻿participant_id,session_id,config_version,phase,trial_index,block_index,in_block_index,condition_id,cue_accuracy,cue_cost_offered,buy_cue_side,risky_side,true_context,cue_signal_generated,risky_reward_generated,cue_choice,cue_signal_observed,rt_cue_seconds,reward_choice,rt_reward_seconds,reward_points,cue_cost_paid,net_points,running_total,trial_status
+test_001,20261025T180955Z_51be666c,0.1.0,experiment,1,1,1,q90_c15,0.9,1.5,right,right,neutral,neutral,3.0,buy,neutral,5.245325500029139,safe,2.0774554000236094,6.0,1.5,4.5,4.5,completed
+test_001,20261025T180955Z_51be666c,0.1.0,experiment,2,1,2,q60_c15,0.6,1.5,right,right,low,low,0.0,buy,low,0.6897491998970509,safe,1.534176400047727,6.0,1.5,4.5,9.0,completed
+test_001,20261025T180955Z_51be666c,0.1.0,experiment,3,1,3,q90_c05,0.9,0.5,right,left,low,low,3.0,buy,low,2.6115403999574482,risky,0.5558682000264525,3.0,0.5,2.5,11.5,completed
+test_001,20261025T180955Z_51be666c,0.1.0,experiment,4,1,4,q60_c05,0.6,0.5,right,left,neutral,low,3.0,buy,low,2.4124189000576735,risky,0.31700729997828603,3.0,0.5,2.5,14.0,completed
+test_001,20261025T180955Z_51be666c,0.1.0,experiment,5,2,1,q60_c05,0.6,0.5,left,left,neutral,neutral,3.0,skip,,0.31054969993419945,safe,0.7884406999219209,6.0,0.0,6.0,20.0,completed
+test_001,20261025T180955Z_51be666c,0.1.0,experiment,6,2,2,q90_c05,0.9,0.5,left,left,high,high,12.0,buy,high,2.132627399987541,risky,1.0459632000420243,12.0,0.5,11.5,31.5,completed
+test_001,20261025T180955Z_51be666c,0.1.0,experiment,7,2,3,q60_c15,0.6,1.5,right,left,high,high,12.0,skip,,2.007939500035718,safe,0.8093722000485286,6.0,0.0,6.0,37.5,completed
+test_001,20261025T180955Z_51be666c,0.1.0,experiment,8,2,4,q90_c15,0.9,1.5,left,left,low,neutral,3.0,buy,neutral,0.6004510000348091,safe,0.6133056000107899,6.0,1.5,4.5,42.0,completed
+test_001,20261025T180955Z_51be666c,0.1.0,experiment,9,3,1,q90_c05,0.9,0.5,right,right,high,high,9.0,skip,,0.48015119996853173,risky,1.2111763999564573,9.0,0.0,9.0,51.0,completed
+test_001,20261025T180955Z_51be666c,0.1.0,experiment,10,3,2,q60_c15,0.6,1.5,left,right,high,high,12.0,buy,high,0.737044999958016,risky,0.7828638000646606,12.0,1.5,10.5,61.5,completed
+test_001,20261025T180955Z_51be666c,0.1.0,experiment,11,3,3,q90_c15,0.9,1.5,left,right,high,high,12.0,skip,,0.7569555999943987,risky,0.8589195000240579,12.0,0.0,12.0,73.5,completed
+test_001,20261025T180955Z_51be666c,0.1.0,experiment,12,3,4,q60_c05,0.6,0.5,right,right,low,neutral,0.0,skip,,2.21443900000304,risky,0.7417646000394598,0.0,0.0,0.0,73.5,completed
+test_001,20261025T180955Z_51be666c,0.1.0,experiment,13,4,1,q90_c15,0.9,1.5,right,left,high,high,12.0,buy,high,1.6211381000466645,risky,2.3924380000680685,12.0,1.5,10.5,84.0,completed
+test_001,20261025T180955Z_51be666c,0.1.0,experiment,14,4,2,q60_c15,0.6,1.5,left,left,low,low,6.0,buy,low,1.1817171999718994,safe,0.608106300001964,6.0,1.5,4.5,88.5,completed
+test_001,20261025T180955Z_51be666c,0.1.0,experiment,15,4,3,q60_c05,0.6,0.5,left,right,high,low,12.0,buy,low,0.8218789999373257,safe,0.9308183999964967,6.0,0.5,5.5,94.0,completed
+test_001,20261025T180955Z_51be666c,0.1.0,experiment,16,4,4,q90_c05,0.9,0.5,left,right,low,low,0.0,skip,,2.037174499942921,risky,1.0898800999857485,0.0,0.0,0.0,94.0,completed

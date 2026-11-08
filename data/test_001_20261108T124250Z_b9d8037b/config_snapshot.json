@@ -1,0 +1,335 @@
+{
+  "experiment": {
+    "name": "cue_bandit",
+    "version": "0.4.0-wallet-free-training-30-costs",
+    "mode": "test",
+    "n_trials": 90,
+    "n_blocks": 4,
+    "random_seed": 12345
+  },
+  "contexts": {
+    "sampling": "independent",
+    "states": {
+      "high": {
+        "weight": 1,
+        "risky_probabilities": [
+          0.05,
+          0.05,
+          0.1,
+          0.25,
+          0.55
+        ]
+      },
+      "neutral": {
+        "weight": 1,
+        "risky_probabilities": [
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2
+        ]
+      },
+      "low": {
+        "weight": 1,
+        "risky_probabilities": [
+          0.55,
+          0.25,
+          0.1,
+          0.05,
+          0.05
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "safe_points": 6,
+    "risky_outcomes": [
+      0,
+      3,
+      6,
+      9,
+      12
+    ]
+  },
+  "cue": {
+    "error_model": "symmetric_other",
+    "show_cost_and_accuracy": false
+  },
+  "design": {
+    "assignment": "balanced",
+    "randomize_order": true,
+    "max_identical_in_row": 3,
+    "conditions": [
+      {
+        "id": "c055",
+        "cue_accuracy": 1.0,
+        "cue_cost": 0.55,
+        "weight": 1
+      },
+      {
+        "id": "c060",
+        "cue_accuracy": 1.0,
+        "cue_cost": 0.6,
+        "weight": 1
+      },
+      {
+        "id": "c065",
+        "cue_accuracy": 1.0,
+        "cue_cost": 0.65,
+        "weight": 1
+      },
+      {
+        "id": "c070",
+        "cue_accuracy": 1.0,
+        "cue_cost": 0.7,
+        "weight": 1
+      },
+      {
+        "id": "c075",
+        "cue_accuracy": 1.0,
+        "cue_cost": 0.75,
+        "weight": 1
+      },
+      {
+        "id": "c080",
+        "cue_accuracy": 1.0,
+        "cue_cost": 0.8,
+        "weight": 1
+      },
+      {
+        "id": "c085",
+        "cue_accuracy": 1.0,
+        "cue_cost": 0.85,
+        "weight": 1
+      },
+      {
+        "id": "c090",
+        "cue_accuracy": 1.0,
+        "cue_cost": 0.9,
+        "weight": 1
+      },
+      {
+        "id": "c095",
+        "cue_accuracy": 1.0,
+        "cue_cost": 0.95,
+        "weight": 1
+      },
+      {
+        "id": "c100",
+        "cue_accuracy": 1.0,
+        "cue_cost": 1.0,
+        "weight": 1
+      },
+      {
+        "id": "c105",
+        "cue_accuracy": 1.0,
+        "cue_cost": 1.05,
+        "weight": 1
+      },
+      {
+        "id": "c110",
+        "cue_accuracy": 1.0,
+        "cue_cost": 1.1,
+        "weight": 1
+      },
+      {
+        "id": "c115",
+        "cue_accuracy": 1.0,
+        "cue_cost": 1.15,
+        "weight": 1
+      },
+      {
+        "id": "c120",
+        "cue_accuracy": 1.0,
+        "cue_cost": 1.2,
+        "weight": 1
+      },
+      {
+        "id": "c125",
+        "cue_accuracy": 1.0,
+        "cue_cost": 1.25,
+        "weight": 1
+      },
+      {
+        "id": "c130",
+        "cue_accuracy": 1.0,
+        "cue_cost": 1.3,
+        "weight": 1
+      },
+      {
+        "id": "c135",
+        "cue_accuracy": 1.0,
+        "cue_cost": 1.35,
+        "weight": 1
+      },
+      {
+        "id": "c140",
+        "cue_accuracy": 1.0,
+        "cue_cost": 1.4,
+        "weight": 1
+      },
+      {
+        "id": "c145",
+        "cue_accuracy": 1.0,
+        "cue_cost": 1.45,
+        "weight": 1
+      },
+      {
+        "id": "c150",
+        "cue_accuracy": 1.0,
+        "cue_cost": 1.5,
+        "weight": 1
+      },
+      {
+        "id": "c155",
+        "cue_accuracy": 1.0,
+        "cue_cost": 1.55,
+        "weight": 1
+      },
+      {
+        "id": "c160",
+        "cue_accuracy": 1.0,
+        "cue_cost": 1.6,
+        "weight": 1
+      },
+      {
+        "id": "c165",
+        "cue_accuracy": 1.0,
+        "cue_cost": 1.65,
+        "weight": 1
+      },
+      {
+        "id": "c170",
+        "cue_accuracy": 1.0,
+        "cue_cost": 1.7,
+        "weight": 1
+      },
+      {
+        "id": "c175",
+        "cue_accuracy": 1.0,
+        "cue_cost": 1.75,
+        "weight": 1
+      },
+      {
+        "id": "c180",
+        "cue_accuracy": 1.0,
+        "cue_cost": 1.8,
+        "weight": 1
+      },
+      {
+        "id": "c185",
+        "cue_accuracy": 1.0,
+        "cue_cost": 1.85,
+        "weight": 1
+      },
+      {
+        "id": "c190",
+        "cue_accuracy": 1.0,
+        "cue_cost": 1.9,
+        "weight": 1
+      },
+      {
+        "id": "c195",
+        "cue_accuracy": 1.0,
+        "cue_cost": 1.95,
+        "weight": 1
+      },
+      {
+        "id": "c200",
+        "cue_accuracy": 1.0,
+        "cue_cost": 2.0,
+        "weight": 1
+      }
+    ]
+  },
+  "training": {
+    "enabled": true,
+    "n_trials": 30,
+    "trials_per_context": 10,
+    "use_main_conditions": false,
+    "feedback": {
+      "show_reward": true,
+      "show_true_context": false,
+      "show_total_points": false
+    },
+    "comprehension_check": {
+      "enabled": true,
+      "min_correct_fraction": 0.8,
+      "max_attempts": 2
+    }
+  },
+  "main_task": {
+    "feedback": {
+      "show_reward": true,
+      "show_true_context": false,
+      "show_total_points": false
+    }
+  },
+  "confidence": {
+    "enabled": false,
+    "stage": "after_cue_before_reward_choice",
+    "min_value": 0,
+    "max_value": 100,
+    "step": 1,
+    "every_nth_trial": 1
+  },
+  "timing": {
+    "fixation_seconds": 0.5,
+    "cue_result_seconds": 1.5,
+    "reward_feedback_seconds": 1.5,
+    "intertrial_seconds": 0.5,
+    "cue_decision_timeout_seconds": 10,
+    "reward_decision_timeout_seconds": 10
+  },
+  "controls": {
+    "left_key": "left",
+    "right_key": "right",
+    "continue_key": "space",
+    "quit_key": "escape",
+    "randomize_cue_option_positions": true,
+    "randomize_reward_option_positions": false,
+    "timeout_policy": "mark_missing"
+  },
+  "display": {
+    "fullscreen": true,
+    "window_size_pixels": [
+      1100,
+      700
+    ],
+    "units": "height",
+    "background_color": "black",
+    "text_color": "white",
+    "language": "pl",
+    "font": "Segoe UI",
+    "forest_gray": "#898989",
+    "wallet_caption": "Stan konta:"
+  },
+  "images": {
+    "directory": "images",
+    "wallet_file": "wallet.png",
+    "forest_files": {
+      "A": "context_1.png",
+      "B": "context_2.png",
+      "C": "context_3.png",
+      "unknown": "context_null.png"
+    }
+  },
+  "scoring": {
+    "starting_points": 0,
+    "allow_negative_total": true,
+    "bonus": {
+      "enabled": false,
+      "points_to_pln": null,
+      "min_pln": null,
+      "max_pln": null
+    }
+  },
+  "data": {
+    "output_directory": "data",
+    "save_each_trial": true,
+    "save_config_snapshot": true,
+    "save_generated_trial_schedule": true,
+    "participant_id_from_dialog": true
+  }
+}

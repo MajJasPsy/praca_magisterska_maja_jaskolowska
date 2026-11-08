@@ -1,0 +1,2 @@
+﻿attempt,question_id,question_text,left_text,right_text,correct_side,chosen_side,is_correct,rt_seconds
+1,safe_constant,Ile punktów zapewnia opcja bezpieczna?,Zawsze 6 punktów,Zawsze 7 punktów,left,right,0,2.1787370999809355

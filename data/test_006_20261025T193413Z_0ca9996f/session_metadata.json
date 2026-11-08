@@ -1,0 +1,14 @@
+{
+  "participant_id": "test_006",
+  "session_id": "20261025T193413Z_0ca9996f",
+  "created_utc": "2026-10-25T19:34:13.834105+00:00",
+  "plan_seed": 12345,
+  "environment_seed": 12346,
+  "config_version": "0.1.0",
+  "n_planned_trials": 16,
+  "n_planned_training_trials": 6,
+  "training_plan_seed": 12347,
+  "training_environment_seed": 12348,
+  "comprehension_check_enabled": true,
+  "note": "PROTOTYP TESTOWY; instrukcje i quiz sa robocze, brak pomiaru pewnosci."
+}

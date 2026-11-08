@@ -1,0 +1,2 @@
+﻿participant_id,session_id,config_version,phase,trial_index,block_index,in_block_index,condition_id,cue_accuracy,cue_cost_offered,buy_cue_side,risky_side,true_context,cue_signal_generated,risky_reward_generated,cue_choice,cue_signal_observed,rt_cue_seconds,reward_choice,rt_reward_seconds,reward_points,cue_cost_paid,net_points,running_total,trial_status
+test_007,20261026T132315Z_94d195bf,0.1.0,training,1,1,1,q90_c15,0.9,1.5,right,right,high,high,12.0,,,,,,,,,0.0,aborted
